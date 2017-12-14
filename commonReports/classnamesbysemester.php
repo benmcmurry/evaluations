@@ -8,7 +8,7 @@ header('Content-Disposition: attachment; filename='.$fileName.'.csv');
 $output = fopen('php://output', 'w');
 fputcsv($output, array('semester','class','overall teacher nps','total_ratings','overall class nps','total_ratings'));
 
-$query = $elc_db->prepare("Select c.course_name, semester from Evaluations Natural Join Courses C group by c.course_name, semester order by `semester` ASC, c.course_name ASC");
+$query = $elc_db->prepare("Select c.course_name, semester from Evaluations Natural Join Courses c group by c.course_name, semester order by `semester` ASC, c.course_name ASC");
 $query->execute();
 $result = $query->get_result();
 while($class = $result->fetch_assoc()){
