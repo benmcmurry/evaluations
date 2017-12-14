@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "martel";
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+header {
+    color: white;
+    background-color: rgba(70, 162, 222, 0.7);
+    /* height: 100px; */
+    display: flex;
+    flex-direction: row;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+#title {
+    font-size: 2em;
+    font-family: "Roboto";
+    font-weight: bolder;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+div#user {
+    flex: initial;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #16357a;
+    color: white;
+    font-size: 1em;
+    line-height: 1em;
+    height: 1em;
+    padding: .5em 1em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div#user a {
+    color: white;
+}
+
+article {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+}
+
+#downloads,
+#reports_constructor,
+#placeholder {
+    width: 17em;
+    flex: initial;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #16357a;
+}
+
+#placeholder {
+    display: none;
+}
+
+#downloads_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-stretch;
+}
+
+a#generate {
+    display: block;
+    text-align: center;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin: .3em auto;
+    width: 14em;
+    z-index: 99;
+}
+
+a#generate:hover {
+    background-color: lightseagreen;
+}
+
+a#generate:active {
+    position: relative;
+    top: 1px;
+}
+
+#downloads p,
+#reports_constructor h3 {
+    color: white;
+    padding: .5em 1em;
+    font-family: "Roboto";
+    font-size: 1.3em;
+    border-bottom: 1px white solid;
+}
+
+#downloads_container a {
+    padding: .5em 1em;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    width: vw;
+}
+
+#downloads_container a:hover {
+    color: white;
+    background-color: rgba(70, 162, 222, 0.7);
+}
+
+#content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #efefef;
+    padding: .5em 1em;
+}
+
+#field_lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.table {
+    background-color: white;
+    border: 1px gray solid;
+    margin: .5em;
+    padding: .3em;
+    width: 300px;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.table h3 {
+    display: block;
+    text-align: center;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+
+.field_list li {
+    list-style: none;
+    background-color: rgba(70, 162, 222, 1);
+    color: white;
+    text-align: center;
+    margin: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    cursor: pointer;
+}
+
+#reports_constructor h3 {
+    display: block;
+    text-align: center;
+}
+
+#selected_fields {
+    width: 17em;
+    height: 100vh;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+footer {
+    background-color: pink;
+}
