@@ -14,7 +14,7 @@ header('Content-Disposition: attachment; filename='.$fileName.'.csv');
 // create a file pointer connected to the output stream
 $output = fopen('php://output', 'w');
 
-$query = $elc_db->prepare("Select ".$fields." from evaluations e
+$query = $elc_db->prepare("Select ".$fields." from Evaluations e
 natural join Courses c
 natural join  Students s
 Natural Join Teachers t
