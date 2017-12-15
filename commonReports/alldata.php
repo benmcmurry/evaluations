@@ -10,7 +10,7 @@ $output = fopen('php://output', 'w');
 
 
 
-$query = $elc_db->prepare("Select * from `evaluations`
+$query = $elc_db->prepare("Select * from `Evaluations`
 natural join Courses 
 natural join  Students
 Natural Join Teachers
