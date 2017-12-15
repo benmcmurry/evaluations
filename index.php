@@ -47,7 +47,7 @@ include_once("cas-go.php");
             }
             ?>
                 <div id='reports_constructor'>
-                    <h3> Drag fields to the left into the box below</h3>
+                    <h3> Drag fields on the right into the box below.</h3>
                     <a id="generate">Generate Report</a>
 
 
