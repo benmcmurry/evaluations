@@ -39,7 +39,7 @@ include_once("cas-go.php");
                 echo "Access Denied.";return;
             } else {
                 if ($net_id == "blm39" || $net_id =="hatuhart" || $net_id =="kjh27") {
-                   
+
                 } else {
                     echo "Access Denied.";
                     return;
@@ -87,7 +87,7 @@ include_once("cas-go.php");
                             $fields = $result->fetch_fields();
                             foreach ($fields as $val) {
                                 if ($val->name !== "semester"){
-                                    
+
                                 echo "<li id='c.".$val->name."'>$val->name</li>";}
                             }
                             ?>
@@ -150,7 +150,7 @@ include_once("cas-go.php");
                             $fields = $result->fetch_fields();
                             foreach ($fields as $val) {
                                 if ($val->name !== "id" && $val->name !== "semester" && $val->name !== "student_id"){
-                                    
+
                                 echo "<li id='sd.".$val->name."'>$val->name</li>";}
                             }
                             ?>
@@ -166,8 +166,8 @@ include_once("cas-go.php");
                             $result = $query->get_result();
                             $fields = $result->fetch_fields();
                             foreach ($fields as $val) {
-                                if ($val->name !== "id" && $val->name !== "semester_id" && $val->name !== "student_id" && $val->name !== "course_id"){
-                                    
+                                if ($val->name !== "id" && $val->name !== "semester" && $val->name !== "student_id" && $val->name !== "course_id"){
+
                                 echo "<li id='se.".$val->name."'>$val->name</li>";}
                             }
                             ?>
